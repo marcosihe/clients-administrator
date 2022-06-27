@@ -1,4 +1,4 @@
-import Form from "../components/Form";
+import MyForm from "../components/MyForm";
 
 const NewClient = () => {
   return (
@@ -7,7 +7,7 @@ const NewClient = () => {
       <p className="mt-3">
         Completa los siguientes campos para registrar unn nuevo cliente
       </p>
-      <Form />
+      <MyForm />
     </>
   );
 };
