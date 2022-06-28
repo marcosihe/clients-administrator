@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import Alert from "./Alert";
 
 const MyForm = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const newClientSchema = Yup.object().shape({
     name: Yup.string()
@@ -24,16 +24,16 @@ const MyForm = () => {
   });
   const handleSubmit = async (values) => {
     try {
-      const URL = 'http://localhost:4000/clients'
+      const URL = "http://localhost:4000/clients";
       const RESPONSE = await fetch(URL, {
-        method: 'POST',
+        method: "POST",
         body: JSON.stringify(values),
         headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-      const RESULT = await RESPONSE.json()
-      navigate('/clients')
+          "Content-Type": "application/json",
+        },
+      });
+      const RESULT = await RESPONSE.json();
+      navigate("/clients");
     } catch (error) {
       console.log(error);
     }
@@ -52,9 +52,9 @@ const MyForm = () => {
           phone: "",
           notes: "",
         }}
-        onSubmit={async (values, {resetForm}) => {
-          await handleSubmit(values)
-          resetForm()
+        onSubmit={async (values, { resetForm }) => {
+          await handleSubmit(values);
+          resetForm();
         }}
         validationSchema={newClientSchema}
       >
