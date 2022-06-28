@@ -1,0 +1,20 @@
+{
+  "clients": [
+    {
+      "name": "Karen",
+      "company": "Karen Design UX/UI",
+      "email": "hemrcs@gmail.com",
+      "phone": "03816703322",
+      "notes": "COTIZA EN USD",
+      "id": 1
+    },
+    {
+      "name": "Maarcos",
+      "company": "DevMar",
+      "email": "hemrcs@gmail.com",
+      "phone": "01182738283",
+      "notes": "US clients",
+      "id": 2
+    }
+  ]
+}
