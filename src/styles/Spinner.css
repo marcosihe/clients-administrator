@@ -4,6 +4,7 @@
     position: relative;
     animation: sk-chase 2.5s infinite linear both;
     margin: 0 auto;
+    margin-top: 2rem;
   }
   
   .sk-chase-dot {
