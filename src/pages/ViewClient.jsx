@@ -12,7 +12,7 @@ const ViewClient = () => {
     setLoading(!loading);
     const getClient = async () => {
       try {
-        const URL = `${import.meta.env.VITE_API_URL}/${id}`;
+        const URL = `https://my-json-server.typicode.com/marcosihe/clients-administrator/clients/${id}`;
         let response = await fetch(URL);
         let result = await response.json();
         setClient(result);

@@ -6,7 +6,7 @@ const Home = () => {
   useEffect(() => {
     const getClients = async () => {
       try {
-        const URL = import.meta.env.VITE_API_URL;
+        const URL = 'https://my-json-server.typicode.com/marcosihe/clients-administrator/clients';
         let response = await fetch(URL);
         let result = await response.json();
         setClients(result);
@@ -20,7 +20,7 @@ const Home = () => {
   const handleDelete = async id => {
     if(confirm('¿Desea eleminar este cliente?')){
       try {
-        const URL = `${import.meta.env.VITE_API_URL}/${id}`;
+        const URL = `https://my-json-server.typicode.com/marcosihe/clients-administrator/clients/${id}`;
         let response = await fetch(URL, {
           method: "DELETE"
         });
