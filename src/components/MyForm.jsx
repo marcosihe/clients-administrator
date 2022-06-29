@@ -24,7 +24,7 @@ const MyForm = ({ client, formType }) => {
   });
   const handleSubmit = async (values) => {
     try {
-      const URL = "http://localhost:4000/clients";
+      const URL = import.meta.env.VITE_API_URL;
       const RESPONSE = await fetch(URL, {
         method: "POST",
         body: JSON.stringify(values),

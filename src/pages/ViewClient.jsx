@@ -12,7 +12,7 @@ const ViewClient = () => {
     setLoading(!loading);
     const getClient = async () => {
       try {
-        const URL = `http://localhost:4000/clients/${id}`;
+        const URL = `${import.meta.env.VITE_API_URL}/${id}`;
         let response = await fetch(URL);
         let result = await response.json();
         setClient(result);

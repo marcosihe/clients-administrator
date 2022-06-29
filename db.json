@@ -1,20 +1,20 @@
 {
   "clients": [
     {
-      "name": "Karen",
-      "company": "Karen Design UX/UI",
-      "email": "hemrcs@gmail.com",
-      "phone": "03816703322",
-      "notes": "COTIZA EN USD",
-      "id": 1
-    },
-    {
       "name": "Nachi",
       "company": "MODA cba tenden",
       "email": "nachi@gmail.com",
       "phone": "351929292",
       "notes": "Pago por adelantado",
       "id": 2
+    },
+    {
+      "name": "Marcos Herrera",
+      "company": "Entropy",
+      "email": "hemrcs@gmail.com",
+      "phone": "3816777777",
+      "notes": "Cliente de prueba",
+      "id": 3
     }
   ]
 }
