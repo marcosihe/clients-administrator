@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build build && echo '/* /index.html  200' | cat >build/__redirects ",
+    "build": "vite build build",
     "preview": "vite preview"
   },
   "dependencies": {
