@@ -16,11 +16,27 @@ const Home = () => {
     };
     getClients();
   }, []);
+
+  const handleDelete = async id => {
+    if(confirm('¿Desea eleminar este cliente?')){
+      try {
+        const URL = `http://localhost:4000/clients/${id}`;
+        let response = await fetch(URL, {
+          method: "DELETE"
+        });
+        await response.json();
+        setClients(clients.filter(client => client.id !== id))
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  }
+
   return (
     <>
       <h1 className="font-black text-4xl text-blue-900">Clientes</h1>
       <p className="mt-3">Administra tus Clientes</p>
-      <ClientsTable clients={clients} />
+      <ClientsTable clients={clients} handleDelete={handleDelete} />
     </>
   );
 };

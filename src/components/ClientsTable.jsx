@@ -1,6 +1,6 @@
 import Client from "./Client";
 
-const ClientsTable = ({ clients }) => {
+const ClientsTable = ({ clients, handleDelete }) => {
   return (
     <>
       <table className="w-full mt-5 table-auto shadow bg-white">
@@ -15,7 +15,7 @@ const ClientsTable = ({ clients }) => {
 
         <tbody>
           {clients.map((client) => (
-            <Client key={client.id} client={client} />
+            <Client key={client.id} client={client} handleDelete={handleDelete} />
           ))}
         </tbody>
       </table>
